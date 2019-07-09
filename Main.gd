@@ -13,6 +13,13 @@ func _ready():
 	$MenuButtonFile.get_popup().add_item("Quit")
 	$MenuButtonFile.get_popup().connect("id_pressed", self, "_on_item_file_pressed")
 	
+	var shortcut : = ShortCut.new()
+	var inputeventkey : = InputEventKey.new()
+	inputeventkey.set_scancode(KEY_Q)
+	inputeventkey.control = true
+	shortcut.set_shortcut(inputeventkey)
+	$MenuButtonFile.get_popup().set_item_shortcut(4, shortcut, true)
+	
 	$MenuButtonHelp.get_popup().add_item("About")
 	$MenuButtonHelp.get_popup().add_item("Godot webpage")
 	$MenuButtonHelp.get_popup().connect("id_pressed", self, "_on_item_help_pressed")
