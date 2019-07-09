@@ -8,9 +8,29 @@ anchor_bottom = 1.0
 script = ExtResource( 1 )
 
 [node name="TextEdit" type="TextEdit" parent="."]
-margin_top = 80.0
-margin_right = 1024.0
-margin_bottom = 578.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 40.0
+margin_right = -10.0
+margin_bottom = -10.0
+rect_min_size = Vector2( 100, 100 )
+
+[node name="MenuButtonFile" type="MenuButton" parent="."]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 45.0
+margin_bottom = 30.0
+text = "File"
+switch_on_hover = true
+
+[node name="MenuButtonHelp" type="MenuButton" parent="."]
+margin_left = 50.0
+margin_top = 10.0
+margin_right = 92.0
+margin_bottom = 30.0
+text = "Help"
+switch_on_hover = true
 
 [node name="SaveDialog" type="FileDialog" parent="."]
 margin_left = 138.0
@@ -32,19 +52,6 @@ mode = 0
 access = 2
 current_dir = "/home/rainbyte/Local/Proyectos/learn-godot/source_git/MakingPrograms_TextEditor"
 current_path = "/home/rainbyte/Local/Proyectos/learn-godot/source_git/MakingPrograms_TextEditor/"
-
-[node name="MenuButtonFile" type="MenuButton" parent="."]
-margin_right = 110.0
-margin_bottom = 40.0
-text = "File"
-switch_on_hover = true
-
-[node name="MenuButtonHelp" type="MenuButton" parent="."]
-margin_left = 139.0
-margin_right = 249.0
-margin_bottom = 40.0
-text = "Help"
-switch_on_hover = true
 
 [node name="AboutDialog" type="WindowDialog" parent="."]
 margin_left = 260.0
